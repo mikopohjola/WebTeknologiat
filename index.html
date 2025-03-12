@@ -1,53 +1,40 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 
 <head>
-    <title>Suorittamiani opintoja</title>
-    <meta charset="UTF-8">
+    <title>Lomake</title>
+
 </head>
 
-
 <body>
-    <h1>Suorittamiani opintoja</h1>
-    <p>
-        Opiskelen LAB Ammattikorkeakoulussa
-        <a href="https://lab.fi/fi"> Linkki LABin Etusivuille </a>
 
-    <p>
-        <img src=https://elab.lab.fi/sites/default/files/styles/max_1200_auto/public/category-page/2022-09/Lappeenrannan%20kampus.jpg?itok=QtO0vLwA,
-            width="300" height="150">
+    <form action="Lomake_Tehtävä.html" method="post">
+        <fieldset style="width: 300px; padding: 10px;">
+            <legend>Contact Information:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text id=" fname" name="fname">
+            <label for="contact_method">Preferred contact method:</label><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text id=" lname" name="lname">
+            <input type="checkbox" name="contact_method" value="email"> Email <br>
+            <label for="email">Email:</label><br>
+            <input type="text id=" email" name="email">
+            <input type="checkbox" name="contact_method" value="phone"> Telephone <br>
+            <label for="phone">Telephone:</label><br>
+            <input type="text id=" phone" name="phone"><br>
+        </fieldset>
+        <fieldset style="width: 300px; padding: 10px;">
+            <legend>Feedback:</legend>
+            <label for="feedback">Message subject:</label>
+            <input type="text id=" feedback" name="feedback"><br><br>
+            <textarea name="message" rows="10" cols="50"></textarea><br>
+            <label for="fileUpload">Attach a file:</label>
+            <input type="file" id="fileUpload" name="attachment"><br><br>
+            <button type="submit">Send</button>
 
-    <p>Alla lista suorittamistani opinnoista</p>
+        </fieldset>
 
-    <table style="border: 1px solid black;">
-        <tr>
-            <th>Kurssi</th>
-            <th>Laajuus</th>
-        </tr>
-        <tr>
-            <td>Ohjelmoinnin perusteet</td>
-            <td> 5</td>
-        </tr>
-        <tr>
-            <td>Tietokannat</td>
-            <td> 5</td>
-        </tr>
-        <tr>
-            <td>Taloushallinto</td>
-            <td> 5</td>
-        </tr>
-    </table>
-
-    <h2>Top 3 suoritukset</h2>
-    <ol>
-        <li>Tietokannat</li>
-        <li>Taloushallinto</li>
-        <li>Ohjelmoinnin perusteet</li>
-    </ol>
-    <p>
-
-
-    </p>
+    </form>
 
 </body>
 
