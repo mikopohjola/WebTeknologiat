@@ -3,10 +3,24 @@
 
 <head>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
         form {
-            border: 1px solid black;
-            padding: 10px;
+            border: 1px solid #ccc;
+            padding: 15px;
             width: 50%;
+            background-color: white;
+            border-radius: 5px;
         }
 
         legend {
@@ -18,38 +32,58 @@
             font-weight: bold;
         }
 
-        input[type="text"] {
+        input[type="text"],
+        textarea {
             width: 100%;
-            padding: 12px 20px;
+            padding: 10px;
             margin: 8px 0;
             box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
 
         input[type="checkbox"] {
             margin: 8px 0;
         }
 
-        textarea {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-
         table {
             border-collapse: collapse;
-            width: 50%;
+            width: 60%;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         th,
         td {
-            border: 1px solid black;
-            padding: 8px;
+            border: 1px solid #ccc;
+            padding: 10px;
             text-align: left;
         }
 
         th {
-            background-color: #a7a5a5;
+            background-color: #6c757d;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        img {
+            border-radius: 10px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
     <title>Suorittamiani opintoja</title>
