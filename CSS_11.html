@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        form {
+            border: 1px solid black;
+            padding: 10px;
+            width: 50%;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            margin: 8px 0;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+    <title>Lomake</title>
+
+</head>
+
+<body>
+
+    <form action="index.html" method="post">
+
+        <legend>Contact Information:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text id=" fname" name="fname">
+        <label for="contact_method">Preferred contact method:</label><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text id=" lname" name="lname">
+        <input type="checkbox" name="contact_method" value="email"> Email <br>
+        <label for="email">Email:</label><br>
+        <input type="text id=" email" name="email">
+        <input type="checkbox" name="contact_method" value="phone"> Telephone <br>
+        <label for="phone">Telephone:</label><br>
+        <input type="text id=" phone" name="phone"><br>
+
+
+        <legend>Feedback:</legend>
+        <label for="feedback">Message subject:</label>
+        <input type="text id=" feedback" name="feedback"><br><br>
+        <textarea name="message" rows="10" cols="50"></textarea><br>
+        <label for="fileUpload">Attach a file:</label>
+        <input type="file" id="fileUpload" name="attachment"><br><br>
+        <button type="submit">Send</button>
+
+    </form>
+
+</body>
+
+</html>
